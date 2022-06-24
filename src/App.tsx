@@ -1,15 +1,18 @@
 import {NavigationContainer} from '@react-navigation/native';
+import {AppProvider} from 'example-super-app-mock';
 import React from 'react';
 import {SafeAreaView} from 'react-native';
 import {RootStackNavigator} from '../lib';
 
 const App: React.FC = () => {
   return (
-    <NavigationContainer>
-      <SafeAreaView style={{flex: 1}}>
-        <RootStackNavigator />
-      </SafeAreaView>
-    </NavigationContainer>
+    <AppProvider>
+      <NavigationContainer>
+        <SafeAreaView style={{flex: 1}}>
+          <RootStackNavigator />
+        </SafeAreaView>
+      </NavigationContainer>
+    </AppProvider>
   );
 };
 
