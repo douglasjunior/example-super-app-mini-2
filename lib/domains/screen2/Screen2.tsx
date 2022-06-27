@@ -1,4 +1,4 @@
-import {useAppContext} from 'example-super-app-mock';
+import {useAppContext} from 'example-super-app-context';
 import React from 'react';
 import {Button, Text, View} from 'react-native';
 import {useNavigation} from '../../hooks/useNavigation';
